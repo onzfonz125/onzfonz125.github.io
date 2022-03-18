@@ -89,8 +89,8 @@ class Ostacolo {
 const player = new Castagna()
 const boh = new Ostacolo()
 var perso = false
-conta = 0
-punteggio = 0
+var conta = 0
+var punteggio = 0
 player.draw()
 boh.draw()
 function animate() {
