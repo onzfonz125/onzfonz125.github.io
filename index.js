@@ -90,6 +90,7 @@ const player = new Castagna()
 const boh = new Ostacolo()
 var perso = false
 var conta = 0
+var conta2 = 0
 var punteggio = 0
 player.draw()
 boh.draw()
@@ -97,11 +98,16 @@ function animate() {
     requestAnimationFrame(animate)
     c.clearRect(0, 0, canvas.width, canvas.height)
     player.update()
+    if (punteggio >= 60 && conta2 == 0)
+    {
+        conta++
+        document.getElementById('perso').innerHTML = "MATTIA smettila di giocare"
+    }
     if (boh.position.x < 0)
     {
         boh.position.x = 700
         if (boh.velocity.x <= 20)
-            boh.velocity.x += 0.2
+            boh.velocity.x += 0.1
         punteggio += 1
     }
     if (boh.position.x <= 130 && boh.position.x >= 70 && conta == 0 && boh.position.y - player.position.y <= 20)
@@ -126,6 +132,7 @@ addEventListener('keydown', ( { keyCode } ) => {
         player.restart()
         punteggio = 0
         conta = 0
+        conta2 = 0
         perso = false
         document.getElementById('perso').innerHTML = " "
     }
