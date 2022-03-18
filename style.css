@@ -1,24 +1,24 @@
 body {
     margin:auto;
-    }
+}
 
-    canvas {
-        position: absolute;
-        bottom:10px;
-        left: 1px;
-        border:black 3px solid;
-    }
+canvas {
+    position: absolute;
+    bottom:10px;
+    left: 1px;
+    border:black 3px solid;
+}
 
-    body > p {
-        font-size: 18px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 30px;
-    }
+body > p {
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
 
-    #perso {
-        font-size: 30px;
-        color:red;
-    }
+#perso {
+    font-size: 30px;
+    color:red;
+}
